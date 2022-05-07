@@ -1,4 +1,4 @@
-package com.tracker.amqp;
+package com.tracker.config;
 
 import lombok.AllArgsConstructor;
 import org.springframework.amqp.core.*;

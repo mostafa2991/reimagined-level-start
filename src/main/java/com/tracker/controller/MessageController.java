@@ -1,7 +1,6 @@
 package com.tracker.controller;
 
 import com.tracker.service.MessageService;
-import com.tracker.util.EmailUtilImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,8 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MessageController {
 
     private final MessageService messageService;
-//    remove
-private final EmailUtilImpl emailUtilImpl;
 
 
     @GetMapping({"/sendMsg","/sendMsg/{msg}"})
@@ -26,12 +23,5 @@ private final EmailUtilImpl emailUtilImpl;
         return ResponseEntity.ok("success send message");
 
     }
-//    @GetMapping("/sendmail")
-//    public ResponseEntity<String> sendmail() {
-//
-//        emailUtilImpl.sendEmail("mostafa.mm661@gmail.com");
-//        return ResponseEntity.ok("success send message");
-//
-//    }
 }
 

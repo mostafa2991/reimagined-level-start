@@ -1,8 +1,7 @@
 package com.tracker.service;
 
-import com.tracker.amqp.RabbitMQConfig;
+import com.tracker.config.RabbitMQConfig;
 import com.tracker.exceptions.EmptyMessageException;
-import com.tracker.exceptions.NotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
