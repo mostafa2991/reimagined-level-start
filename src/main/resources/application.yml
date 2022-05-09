@@ -1,5 +1,7 @@
 server:
     port: 8080
+
+#    DB source
 spring:
     application:
         name: tracker
@@ -15,6 +17,20 @@ spring:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
                 format_sql: true
         show-sql: true
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: mostafahegzo291
+        password: 5566778899amoh
+        protocol: smtp
+        tls: true
+        properties.mail.smtp:
+            auth: true
+            starttls.required: true
+            starttls.enable: true
+#    rabbitmq
 rabbitmq:
     addresses: localhost:5672
-
+# using to send message based on msgQue or direct
+message:
+    service: direct

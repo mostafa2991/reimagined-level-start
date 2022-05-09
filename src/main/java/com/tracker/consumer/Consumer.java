@@ -10,12 +10,12 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 public class Consumer {
 
-    private final EmailUtilImpl emailUtilImpl;
+    private EmailUtilImpl emailUtilImpl;
 
     @RabbitListener(queues = RabbitMQConfig.QUEUE)
     public void consumeMessageFromQueue(String message) {
-//        send to an email
-        System.out.println("Message received from queue : " + message);
+
         emailUtilImpl.sendEmail("hossamadel94@gmail.com",message);
+
     }
 }
