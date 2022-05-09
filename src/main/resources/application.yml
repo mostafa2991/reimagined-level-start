@@ -20,9 +20,9 @@ spring:
     mail:
         host: smtp.gmail.com
         port: 587
-        username: mostafahegzo291
-        password: 5566778899amoh
-        protocol: smtp
+        username:
+        password: **********
+        protocol: **********
         tls: true
         properties.mail.smtp:
             auth: true
